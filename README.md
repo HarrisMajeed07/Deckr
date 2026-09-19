@@ -12,6 +12,8 @@ Below is an example of what a deck of cards look like. There are buttons to edit
 When the card is pressed there is a nice flip animation that then reveals the other side
 <img width="923" height="581" alt="image" src="https://github.com/user-attachments/assets/3f31da3e-e034-4c30-88b5-a6bac4d5bcfa" />
 
+<img width="890" height="880" alt="image" src="https://github.com/user-attachments/assets/588898fb-c77e-4ae0-a582-39d01ba6c5b0" />
+
 # Fonts
 The fonts that I used I took from google fonts. I found 2 that I liked and just copied the link to import them into the CSS style sheet. The first font I used was Boldonse, which I used for the headings, titles and logo because of its large, bold size. I used it because I wanted Deckr to have its own identity that could be recognized so I chose a font that looks somewhat unique. To compliment this font, I also used another font called inter. The reason for this was because it was simple, readable and complimented the bold font very nicely. It’s based on sans-serif and is apparently designed for easy reading. I liked that it looked bubbly but wasn’t to over the top. Both of these fonts were imported via single google fonts @import in the style sheet.
 
