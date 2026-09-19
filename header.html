@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deckr</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<?php session_start(); ?>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/DeckrLogo.png" alt="Deckr Logo">
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.php">Home</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="pomodoro.php">Pomodoro</a></li>
+            <li><a href="decks.php">My Decks</a></li>
+        </ul>
+        <div class="nav-actions">
+            <?php if (isset($_SESSION["username"])): ?>
+                <span class="nav-username">Hi, <?php echo htmlspecialchars($_SESSION["username"]); ?></span>
+                <a href="php/auth_logout.php" class="loginbutton">Log Out</a>
+            <?php else: ?>
+                <a href="login.php" class="loginbutton">Login</a>
+            <?php endif; ?>
+            <button class="nav-hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    <script>
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('open');
+            document.getElementById('hamburger').classList.toggle('active');
+        }
+    </script>
