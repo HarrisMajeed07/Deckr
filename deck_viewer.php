@@ -101,14 +101,12 @@
                 document.getElementById("flipHint").style.display     = "none";
                 return;
             }
-            // Reset flip without animation briefly
             const card = document.getElementById("flashcard");
             card.style.transition = "none";
             card.classList.remove("flipped");
             isFlipped = false;
             document.getElementById("flipHint").style.display = "block";
 
-            // Force reflow then re-enable transition
             void card.offsetWidth;
             card.style.transition = "";
 
@@ -135,27 +133,19 @@
         }
 
         async function loadDeck() {
-            if (!deckId) return;
-            try {
-                const res  = await fetch(`php/decks_api.php?id=${deckId}`);
-                const deck = await res.json();
-                document.getElementById("deckTitle").textContent       = deck.name        || "Deck Name";
-                document.getElementById("deckDescription").textContent = deck.description || "";
-            } catch (e) {
-                console.error("Could not load deck:", e);
-            }
+            document.getElementById("deckTitle").textContent       = "Web Development Basics";
+            document.getElementById("deckDescription").textContent = "Key terms for HTML, CSS and PHP";
         }
 
         async function loadCards() {
-            if (!deckId) return;
-            try {
-                const res = await fetch(`php/cards_api.php?deck_id=${deckId}`);
-                cards = await res.json();
-                currentCard = 0;
-                showCard(currentCard);
-            } catch (e) {
-                console.error("Could not load cards:", e);
-            }
+            cards = [
+                { id: 1, term: "HTML", definition: "HyperText Markup Language, the structure of a web page" },
+                { id: 2, term: "CSS",  definition: "Cascading Style Sheets, used to style and lay out a page" },
+                { id: 3, term: "PHP",  definition: "A server-side scripting language used to build dynamic sites" },
+                { id: 4, term: "DOM",  definition: "Document Object Model, a tree representation of the page that JavaScript can change" }
+            ];
+            currentCard = 0;
+            showCard(currentCard);
         }
 
         loadDeck();

@@ -30,7 +30,6 @@
         </div>
 
         <div class="cards-edit-list" id="cardsEditList">
-            <!-- Cards injected here -->
         </div>
     </div>
 
@@ -42,25 +41,18 @@
         let cards = [];
 
         async function loadDeck() {
-            if (!deckId) return;
-            try {
-                const res  = await fetch(`php/decks_api.php?id=${deckId}`);
-                const deck = await res.json();
-                document.getElementById("deckTitle").textContent       = deck.name        || "Deck Name";
-                document.getElementById("deckDescription").textContent = deck.description || "";
-            } catch (e) {
-                console.error("Could not load deck:", e);
-            }
+            document.getElementById("deckTitle").textContent       = "Web Development Basics";
+            document.getElementById("deckDescription").textContent = "Key terms for HTML, CSS and PHP";
         }
 
         async function loadCards() {
-            try {
-                const res = await fetch(`${CARDS_API}?deck_id=${deckId}`);
-                cards = await res.json();
-                renderCards();
-            } catch (e) {
-                console.error("Could not load cards:", e);
-            }
+            cards = [
+                { id: 1, term: "HTML", definition: "HyperText Markup Language, the structure of a web page" },
+                { id: 2, term: "CSS",  definition: "Cascading Style Sheets, used to style and lay out a page" },
+                { id: 3, term: "PHP",  definition: "A server-side scripting language used to build dynamic sites" },
+                { id: 4, term: "DOM",  definition: "Document Object Model, a tree representation of the page that JavaScript can change" }
+            ];
+            renderCards();
         }
 
         function renderCards() {
@@ -99,7 +91,6 @@
         function addCard() {
             cards.push({ id: null, term: "", definition: "" });
             renderCards();
-            // Scroll to the new card
             const items = document.querySelectorAll(".card-edit-item");
             items[items.length - 1].scrollIntoView({ behavior: "smooth", block: "center" });
         }
@@ -115,7 +106,7 @@
             items.forEach(item => {
                 const term = item.querySelector(".card-edit-term").value.trim();
                 const def  = item.querySelector(".card-edit-def").value.trim();
-                if (!term && !def) return; // skip blank cards
+                if (!term && !def) return; 
                 payload.push({
                     id:         item.dataset.id || null,
                     deck_id:    deckId,
