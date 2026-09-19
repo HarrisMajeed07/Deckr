@@ -35,6 +35,7 @@ The study interface (deck viewer page) has the flashcard in the centre of the sc
 
 ### Pomodoro timer
 There is a built in 25-minute pomodoro study timer on its dedicated page. The timer is implemented using JavaScript and continues running in the background regardless of the page the student is on. It uses sessionStorage to keep the timer state consistent. The user can start the timer, pause/continue the timer and reset it by clicking the buttons.
+
 <img width="509" height="399" alt="image" src="https://github.com/user-attachments/assets/12bd2f59-ef10-4cbe-826f-ca0e1ba17d15" />
 
 ### Multimedia (instruction video)
