@@ -1,6 +1,6 @@
 # Deckr
 
-Deckr is a simple flashcard webapp that allows students to make flashcards for exam revision. It has a built in pomodoro timer so they can time their revision and has a build in flashcard editor and management system. I submitted this in programming 02 module in uni and achieved a score of 70/100 
+Deckr is a simple flashcard webapp that allows students to make flashcards for exam revision. It has a built in pomodoro timer so they can time their revision and has a build in flashcard editor and management system. I submitted this in the programming 02 module at uni and achieved a score of 70/100 
 
 Deckr is a website that allows the user to create, organize and store digital flashcards that they can use for things such as studying, memorising or repetitive learning. The tool allows them to create a deck which stores flashcards, each card has a term and a definition that the user can flip between. The site has a flipping system so the user can flip between all the cards in the deck and quickly flip between the term and the definition. The goal of decker is to create a fast, clean tool that doesn't have ads or third-party aspects, so the user feels comfortable using it. It's easy to use and very minimal which creates its unique design.
 
