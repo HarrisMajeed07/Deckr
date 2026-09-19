@@ -5,6 +5,12 @@ Deckr is a website that allows the user to create, organize and store digital fl
 
 I built the website using HTML5, CSS, JavaScript and PHP. The database is a MySQL database. Some of the key features my website has been the user authentication, the ability to create, edit and store cards. The ability to store cards inside of decks that all have title and description. There is a built-in study timer that the student can use to time how much they study, the timer has a pause/continue button, start and stop button and works in sections of 25mins. 
 
+# Example
+Below is an example of what a deck of cards look like. There are buttons to edit, delete, share and import cards.
+<img width="1919" height="994" alt="image" src="https://github.com/user-attachments/assets/5bb49c21-6c0e-4a57-9fb5-537517f2d293" />
+
+When the card is pressed there is a nice flip animation that then reveals the other side
+<img width="923" height="581" alt="image" src="https://github.com/user-attachments/assets/3f31da3e-e034-4c30-88b5-a6bac4d5bcfa" />
 
 # Fonts
 The fonts that I used I took from google fonts. I found 2 that I liked and just copied the link to import them into the CSS style sheet. The first font I used was Boldonse, which I used for the headings, titles and logo because of its large, bold size. I used it because I wanted Deckr to have its own identity that could be recognized so I chose a font that looks somewhat unique. To compliment this font, I also used another font called inter. The reason for this was because it was simple, readable and complimented the bold font very nicely. It’s based on sans-serif and is apparently designed for easy reading. I liked that it looked bubbly but wasn’t to over the top. Both of these fonts were imported via single google fonts @import in the style sheet.
