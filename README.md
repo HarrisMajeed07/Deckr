@@ -15,8 +15,11 @@ Deckr is a simple flashcard webapp that allows students to make flashcards for e
 
 ## Tech Stack
 Frontend: HTML5, Vanilla CSS3, Vanilla JavaScript (ES6+)
+
 Backend: PHP 8+
+
 Database: MySQL (interfaced via PDO for security)
+
 Architecture: Client-Server model with asynchronous RESTful API endpoints.
 
 ## Design Highlights
