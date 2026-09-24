@@ -5,18 +5,24 @@ Deckr is a simple flashcard webapp that allows students to make flashcards for e
 ## Key Features
 - **Deck Management:** Create, edit, and organize custom flashcard decks. Includes a real-time search feature to instantly filter through your deck library.
 
-*Interactive Study Mode:* A sleek flashcard viewer featuring 3D flip animations, intuitive navigation, and progress tracking (e.g., Card 1 of 20).
-Persistent Pomodoro Timer: A built-in 25-minute study timer that tracks your sessions. The timer state is saved locally, allowing you to navigate across the app without interrupting your study flow.
-User Authentication: Secure signup and login system to keep user data private and personalized.
-Modern Interface: A clean, responsive design utilizing custom SVG iconography and modular CSS for a premium user experience.
-Tech Stack
+- **Interactive Study Mode:** A sleek flashcard viewer featuring 3D flip animations, intuitive navigation, and progress tracking (e.g., Card 1 of 20).
+
+- **Persistent Pomodoro Timer:** A built-in 25-minute study timer that tracks your sessions. The timer state is saved locally, allowing you to navigate across the app without interrupting your study flow.
+
+- **User Authentication:** Secure signup and login system to keep user data private and personalized.
+
+- **Modern Interface:** A clean, responsive design utilizing custom SVG iconography and modular CSS for a premium user experience.
+
+## Tech Stack
 Frontend: HTML5, Vanilla CSS3, Vanilla JavaScript (ES6+)
 Backend: PHP 8+
 Database: MySQL (interfaced via PDO for security)
 Architecture: Client-Server model with asynchronous RESTful API endpoints.
-Design Highlights
-Zero-Dependency Frontend: The entire user interface, including modals, animations, and state management, was built without external libraries like jQuery or Bootstrap, resulting in a lightweight and fast application.
-Modular Codebase: The backend logic is neatly separated into API endpoints (decks_api.php, cards_api.php) and database configurations (db.php), keeping the presentation layer separate from the data layer.
+
+## Design Highlights
+- **Zero-Dependency Frontend:** The entire user interface, including modals, animations, and state management, was built without external libraries like jQuery or Bootstrap, resulting in a lightweight and fast application.
+  
+- **Modular Codebase:** The backend logic is neatly separated into API endpoints (decks_api.php, cards_api.php) and database configurations (db.php), keeping the presentation layer separate from the data layer.
 
 Deckr is a website that allows the user to create, organize and store digital flashcards that they can use for things such as studying, memorising or repetitive learning. The tool allows them to create a deck which stores flashcards, each card has a term and a definition that the user can flip between. The site has a flipping system so the user can flip between all the cards in the deck and quickly flip between the term and the definition. The goal of decker is to create a fast, clean tool that doesn't have ads or third-party aspects, so the user feels comfortable using it. It's easy to use and very minimal which creates its unique design.
 
