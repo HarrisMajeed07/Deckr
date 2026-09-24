@@ -3,7 +3,8 @@
 Deckr is a simple flashcard webapp that allows students to make flashcards for exam revision. It has a built in pomodoro timer so they can time their revision and has a build in flashcard editor and management system. I submitted this in the programming 02 module at uni and achieved a score of 70/100 
 
 ## Key Features
-*Deck Management:* Create, edit, and organize custom flashcard decks. Includes a real-time search feature to instantly filter through your deck library.
+- **Deck Management:** Create, edit, and organize custom flashcard decks. Includes a real-time search feature to instantly filter through your deck library.
+
 *Interactive Study Mode:* A sleek flashcard viewer featuring 3D flip animations, intuitive navigation, and progress tracking (e.g., Card 1 of 20).
 Persistent Pomodoro Timer: A built-in 25-minute study timer that tracks your sessions. The timer state is saved locally, allowing you to navigate across the app without interrupting your study flow.
 User Authentication: Secure signup and login system to keep user data private and personalized.
